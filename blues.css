@@ -1,1 +1,28 @@
-
+.section {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 900px) {
+  nav li a {
+    line-height: 36px;
+    font-size: 14px;
+    padding: 3px 3px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  nav li a {
+    line-height: 24px;
+  }
+}
+#home {
+  padding: 160px 0 120px 0;
+}
+#home h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #49a7e9;
+}
+#music img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
