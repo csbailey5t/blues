@@ -18,13 +18,15 @@
 <body>
   <div id="main">
 
-    <nav><ul>
-      <img src="img/logo.png" alt="Bring on the Blues logo">
-      {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
-    </ul></nav>
+    <nav>
+      <ul>
+        <img src="img/logo.png" alt="Bring on the Blues logo">
+        {% for node in site.posts reversed %}
+          {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+          <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
+        {% endfor %}
+       </ul>
+    </nav>
 
 
     {% for page in site.posts reversed %}
