@@ -20,7 +20,7 @@
 
     <nav>
       <ul>
-        <img src="img/logo.png" alt="Bring on the Blues logo">
+<!--         <img src="img/logo.png" alt="Bring on the Blues logo"> -->
         {% for node in site.posts reversed %}
           {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
           <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
