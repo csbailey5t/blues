@@ -35,7 +35,7 @@
 #home {
   padding: 160px 0 120px 0;
   background-image: url("img/postcard_image.jpg");
-  background-size: contain;
+  background-size: cover;
 }
 #home h1 {
   font-size: 72px;
