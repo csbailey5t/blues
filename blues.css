@@ -35,7 +35,14 @@
 #home {
   padding: 160px 0 120px 0;
   background-image: url("img/postcard_image.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+@media only screen and (max-width: 1080px) {
+  #home {
+    background-size: cover;
+    background-repeat: none;
+  }
 }
 #home h1 {
   font-size: 72px;

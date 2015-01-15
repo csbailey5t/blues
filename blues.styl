@@ -17,8 +17,11 @@ nav li a
     padding 160px 0 120px 0
     background-image url('img/postcard_image.jpg')
     //background-size 88%
-    background-size cover
-    // background-repeat repeat-x
+    background-size contain
+    background-repeat repeat-x
+    +below(1080px)
+        background-size cover
+        background-repeat none
 
 #home h1
     font-size 72px
